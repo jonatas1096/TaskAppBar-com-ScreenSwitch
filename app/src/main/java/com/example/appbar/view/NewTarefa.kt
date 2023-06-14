@@ -37,13 +37,37 @@ fun NewTarefa(navController: NavController) {
         content = {
             Column(Modifier.padding(16.dp)) {
                 // Conteúdo da tela
-                Text(text = "Preencha os campos para adicionar a nova tarefa:")
+                Text(
+                    text = "Preencha os campos para inserir uma nova tarefa:",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 16.sp,
+
+                )
 
                 TextField(
                     value = "",
                     onValueChange = {},
                     label = { Text("Nome da tarefa") },
                     modifier = Modifier.width(180.dp)
+                        .padding(top = 15.dp)
+
+                )
+
+                TextField(
+                    value = "",
+                    onValueChange = {},
+                    label = { Text("Descrição da tarefa") },
+                    modifier = Modifier.width(180.dp)
+                        .padding(top = 15.dp)
+
+                )
+
+                TextField(
+                    value = "",
+                    onValueChange = {},
+                    label = { Text("Nome da tarefa") },
+                    modifier = Modifier.width(180.dp)
+                        .padding(top = 15.dp)
 
                 )
 
